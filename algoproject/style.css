@@ -6,8 +6,8 @@
 }
 .form-box
 {
-	width: 780px;
-	height: 480px;
+	width: 380px;
+	height: 380px;
 	position: relative;
 	margin: 6% auto;
 	background: rgb(0 0 0 / 69%);
@@ -37,14 +37,14 @@
 .input-group-login
 {
 	top: 55px;
-	position: absolute;
+	position: center;
 	width: 280px;
 	transition: .5s;
 }
 .input-group-register
 {
 	top: 50px;
-	position: absolute;
+	position: center;
 	width: 280px;
 	transition: .5s;
 }
