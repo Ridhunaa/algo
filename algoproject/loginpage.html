@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Register</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<style>
+	body{
+	 background-image: url("deva.jpg");
+	 background-repeat: no-repeat;
+	 background-size: 1300px 710px;
+	}
+</style>
+<div class="form-box">
+	<div class="button-box">
+		<div id="btn"></div>
+	</div>
+	<form id="login" class="input-group-login">
+		 <div class="h2">LOGIN</div>
+		<input type="text" class="input-field" placeholder= "Email Id"required>
+		<input type="password" class="input-field" placeholder="Enter Password" required>
+		<input type="checkbox" class="check-box"><span>Remember Password</span>
+		<button type="submit" class="submit-btn">Login</button>
+	</form>
+	<form id="register" class="input-group-register">
+        <div class="h2">REGISTER</div>
+		<input type="text" class="input-field" placeholder="User Name" required>
+		<input type="email" class="input-field" placeholder="Email Id" required>
+		<input type="tel" class="input-field" placeholder="Mobile No" required>					
+		<input type="password" class="input-field" placeholder="Enter Password" required>
+		<input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+		<button type="submit" class="submit-btn">Register</button>
+	</form>
+</div>
+<script>
+    	var x=document.getElementById("login");
+    	var y=document.getElementById("register");
+    	var z=document.getElementById("btn");
+    	function register()
+    	{
+    		x.style.left="-400px";
+    		y.style.left="50px";
+    		y.style.display= "inline-block";
+    		z.style.left="110px";
+    	}
+    	function login()
+    	{
+    		x.style.left="50px";
+    		y.style.left="45px";
+    		y.style.display="none";
+    		z.style.left="0px";
+    	}
+    </script>
+    <script>
+    	 var modal = document.getElementById("login-form");
+    	 window.onclick = function(event)
+    	 {
+    	 	if (event.target == modal)
+    	 	{
+    	 		modal.style.display="none";
+    	 	}
+    	 }
+    </script>
+</body>
+</html>
