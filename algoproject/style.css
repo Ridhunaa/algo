@@ -15,18 +15,21 @@ section
     align-items: center;
 
 }
-#navbar{
-    position: sticky;
-    top: 0;
-    background: white;
-    z-index: 10;
-}
 .bold
 {
     font-size: 25px;
 }
 li{
     padding: 5px;
+}
+.nav-link{
+     font-size:15px;
+     font-weight:bold;
+     border:2px solid transparent;
+}
+.nav-link:hover{
+     border-bottom:2px solid blue;
+     transition: .1s;
 }
 /*Done by Deva Dharshini*/
 .nav-link{
